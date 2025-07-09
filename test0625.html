@@ -3,105 +3,160 @@
 <head>
 
   <title>フィルター効果サンプル</title>
-  
+
   <!-- cssの内部参照：ヘッダー埋め込み -->
-  <style media="screen"> /*画面に対するスタイル*/
+  <style media="screen">
+    /*画面に対するスタイル*/
 
-  div {
-    width: 320px;
-    height: auto;
-    float: left;
-    margin: 3px;
-    position: relative;
-    border: #ddd 3px solid;
-  }
+    div {
+      width: 320px;
+      height: auto;
+      float: left;
+      margin: 3px;
+      position: relative;
+      border: #ddd 3px solid;
+    }
 
-  img {
-    width: 100%;
-    height: auto;
-    filter: blur(5px);
-  }
+    img {
+      width: 100%;
+      height: auto;
+      filter: blur(5px);
+    }
 
-  .original img {
-    filter: none;
-  }
-/* blur */
-  .blurA img{
-    filter: blur(5px);
-  }
+    .original img {
+      filter: none;
+    }
 
-  .blurB img{
-    filter: blur(10px);
-  }
+    /* blur */
+    .blurA img {
+      filter: blur(5px);
+    }
 
-  .blurC img{
-    filter: blur(30px);
-  }
+    .blurB img {
+      filter: blur(10px);
+    }
 
-/* brightness */
- .brightnessA img{
-    filter: brightness(10%);
-  }
+    .blurC img {
+      filter: blur(30px);
+    }
 
-  .brightnessB img{
-    filter: brightness(50%);
-  }
+    /* brightness */
+    .brightnessA img {
+      filter: brightness(10%);
+    }
 
-  .brightnessC img{
-    filter: brightness(200%);
-  }
+    .brightnessB img {
+      filter: brightness(50%);
+    }
 
-/* contrast */
-   .contrastA img{
-    filter: contrast(0%);
-  }
+    .brightnessC img {
+      filter: brightness(200%);
+    }
 
-  .contrastB img{
-    filter: contrast(50%);
-  }
+    /* contrast */
+    .contrastA img {
+      filter: contrast(0%);
+    }
 
-  .contrastC img{
-    filter: contrast(200%);
-  }
+    .contrastB img {
+      filter: contrast(50%);
+    }
 
-  /* drop-shadow(offsetX offsetY blur color) */
-  .drop-shadowA img{
-    filter: drop-shadow(10px 0px 0px red);
-  }
+    .contrastC img {
+      filter: contrast(200%);
+    }
 
-  .drop-shadowB img{
-    filter: drop-shadow(10px 10px 0px blue);
-  }
+    /* drop-shadow(offsetX offsetY blur color) */
+    .drop-shadowA img {
+      filter: drop-shadow(10px 0px 0px red);
+    }
 
-  .drop-shadowC img{
-    filter: drop-shadow(-10px -10px 10px black);
-  }
+    .drop-shadowB img {
+      filter: drop-shadow(10px 10px 0px blue);
+    }
 
-  /* grayscale */
-  .grayscaleA img{
-    filter: grayscale(50%);
-  }
+    .drop-shadowC img {
+      filter: drop-shadow(-10px -10px 10px black);
+    }
 
-  .grayscaleB img{
-    filter: grayscale(100%);
-  }
+    /* grayscale */
+    .grayscaleA img {
+      filter: grayscale(50%);
+    }
 
-  .grayscaleC img{
-    filter: grayscale(200%);
-  }
+    .grayscaleB img {
+      filter: grayscale(100%);
+    }
 
-  /* grayscale */
-  .hue-rotateA img{
-    filter: hue-rotate(90deg);
-  }
+    .grayscaleC img {
+      filter: grayscale(200%);
+    }
 
-  .hue-rotateB img{
-    filter: hue-rotate(180deg);
-  }
+    /* hue-rotate */
+    .hue-rotateA img {
+      filter: hue-rotate(90deg);
+    }
 
-  .hue-rotateC img{
-    filter: hue-rotate(270deg);
-  }
+    .hue-rotateB img {
+      filter: hue-rotate(180deg);
+    }
+
+    .hue-rotateC img {
+      filter: hue-rotate(270deg);
+    }
+
+
+    /* invert */
+    .invertA img {
+      filter: invert(50%);
+    }
+
+    .invertB img {
+      filter: invert(100%);
+    }
+
+    .invertC img {
+      filter: invert(200%);
+    }
+
+    /* opacity */
+    .opacityA img {
+      filter: opacity(10%);
+    }
+
+    .opacityB img {
+      filter: opacity(50%);
+    }
+
+    .opacityC img {
+      filter: opacity(200%);
+    }
+
+    /* sepia */
+    .sepiaA img {
+      filter: sepia(50%);
+    }
+
+    .sepiaB img {
+      filter: sepia(100%);
+    }
+
+    .sepiaC img {
+      filter: sepia(200%);
+    }
+
+    /* saturate */
+    .saturateA img {
+      filter: saturate(0%);
+    }
+
+    .saturateB img {
+      filter: saturate(50%);
+    }
+
+    .saturateC img {
+      filter: saturate(200%);
+    }
   </style>
 
 </head>
@@ -131,7 +186,7 @@
   </div>
 
   <!-- brightness -->
-    <div class="original"> <!--cssでのクラス名"original"-->
+  <div class="original"> <!--cssでのクラス名"original"-->
     <img src="image/test_bg.png" alt=""><br>
     明るさ：brightness(0%)<br>
   </div>
@@ -152,7 +207,7 @@
   </div>
 
   <!-- contrast -->
-      <div class="original"> <!--cssでのクラス名"original"-->
+  <div class="original"> <!--cssでのクラス名"original"-->
     <img src="image/test_bg.png" alt=""><br>
     コントラスト：contrast(100%)<br>
   </div>
@@ -173,7 +228,7 @@
   </div>
 
   <!-- drop-shadow -->
-      <div class="original"> <!--cssでのクラス名"original"-->
+  <div class="original"> <!--cssでのクラス名"original"-->
     <img src="image/test_bg.png" alt=""><br>
     ドロップシャドウ：drop-shadow(100%)<br>
   </div>
@@ -194,7 +249,7 @@
   </div>
 
   <!-- grayscale -->
-      <div class="original"> <!--cssでのクラス名"original"-->
+  <div class="original"> <!--cssでのクラス名"original"-->
     <img src="image/test_bg.png" alt=""><br>
     グレースケール：grayscale(0%)<br>
   </div>
@@ -215,7 +270,7 @@
   </div>
 
   <!-- hue-rotate -->
-      <div class="original"> <!--cssでのクラス名"original"-->
+  <div class="original"> <!--cssでのクラス名"original"-->
     <img src="image/test_bg.png" alt=""><br>
     色相：hue-rotate(0deg)<br>
   </div>
@@ -235,6 +290,122 @@
     色相：hue-rotate(270deg)<br>
   </div>
 
+  <!-- invert -->
+  <div class="original"> <!--cssでのクラス名"original"-->
+    <img src="image/test_bg.png" alt=""><br>
+    反転：invert(0%)<br>
+  </div>
+
+  <div class="invertA"> <!--cssでのクラス名"invertA"-->
+    <img src="image/test_bg.png" alt=""><br>
+    反転：invert(50%)<br>
+  </div>
+
+  <div class="invertB"> <!--cssでのクラス名"invertB"-->
+    <img src="image/test_bg.png" alt=""><br>
+    反転：invert(100%)<br>
+  </div>
+
+  <div class="invertC"> <!--cssでのクラス名"invertC"-->
+    <img src="image/test_bg.png" alt=""><br>
+    反転：invert(200%)<br>
+  </div>
+
+
+  <!-- opacity -->
+  <div class="original"> <!--cssでのクラス名"original"-->
+    <img src="image/test_bg.png" alt=""><br>
+    半透明：opacity(100%)<br>
+  </div>
+
+  <div class="opacityA"> <!--cssでのクラス名"opacityA"-->
+    <img src="image/test_bg.png" alt=""><br>
+    半透明：opacity(10%)<br>
+  </div>
+
+  <div class="opacityB"> <!--cssでのクラス名"opacityB"-->
+    <img src="image/test_bg.png" alt=""><br>
+    半透明：opacity(50%)<br>
+  </div>
+
+  <div class="opacityC"> <!--cssでのクラス名"opacityC"-->
+    <img src="image/test_bg.png" alt=""><br>
+    半透明：opacity(200%)<br>
+  </div>
+
+  <!-- sepia -->
+  <div class="original"> <!--cssでのクラス名"original"-->
+    <img src="image/test_bg.png" alt=""><br>
+    セピア：sepia(0%)<br>
+  </div>
+
+  <div class="sepiaA"> <!--cssでのクラス名"sepiaA"-->
+    <img src="image/test_bg.png" alt=""><br>
+    セピア：sepia(50%)<br>
+  </div>
+
+  <div class="sepiaB"> <!--cssでのクラス名"sepiaB"-->
+    <img src="image/test_bg.png" alt=""><br>
+    セピア：sepia(100%)<br>
+  </div>
+
+  <div class="sepiaC"> <!--cssでのクラス名"sepiaC"-->
+    <img src="image/test_bg.png" alt=""><br>
+    セピア：sepia(200%)<br>
+  </div>
+
+  <!-- saturate -->
+  <div class="original"> <!--cssでのクラス名"original"-->
+    <img src="image/test_bg.png" alt=""><br>
+    彩度：saturate(100%)<br>
+  </div>
+
+  <div class="saturateA"> <!--cssでのクラス名"saturateA"-->
+    <img src="image/test_bg.png" alt=""><br>
+    彩度：saturate(0%)<br>
+  </div>
+
+  <div class="saturateB"> <!--cssでのクラス名"saturateB"-->
+    <img src="image/test_bg.png" alt=""><br>
+    彩度：saturate(50%)<br>
+  </div>
+
+  <div class="saturateC"> <!--cssでのクラス名"saturateC"-->
+    <img src="image/test_bg.png" alt=""><br>
+    彩度：saturate(200%)<br>
+  </div>
+
+
 </body>
 
 </html>
+
+
+
+<!-- 
+
+・blur
+ガウシアンブラー
+ガウス関数によって、重みづけをしたピクセルを周辺からブレンドする。
+縦、横の計算(によってボカす効果)が独立している。
+※10px指定の場合、計算は10×10ではなく、10+10で完了する。
+
+・grayscale
+白黒にする → RGBを平均化する
+(R+G+B)/3 = Gray 🔺
+R * 0.299 + G * 0.587 + B * 0.114 = Gray
+
+・invert
+iR = 1.0 - R
+iG = 1.0 - G
+iB = 1.0 - B
+
+・opacity(transparent)
+計算式：線形補間(Linear Interpoiation / Lerp)
+下地の色：Destination(Dst)
+画像の色：Source(Src)
+RGB = Src.RGB * Src.A + Dst.RGB * (1 - Src.A)
+
+RGB -> HSV
+
+-->
